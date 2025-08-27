@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Design from "./components/Design";
+import Contact from './components/Contact';
 export default function Home() {
   return (
-    <main className="w-full h-screen  p-20 selection:bg-green-400 selection:text-black ">
-      <div className="relative w-full h-auto">
+    <main className="w-full h-auto  p-20 selection:bg-green-400 selection:text-black ">
+      <section className="relative w-full h-auto">
         {/* h1 heading */}
         <h1 className="relative text-[210px] leading-[270px] font-black  text-white uppercase z-10 scale-y-150">ui/ux</h1>
         {/* h2 heading */}
@@ -22,18 +24,53 @@ export default function Home() {
         <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-560655ee-6349-4491-97ad-3eb333f37ae4.png?w=433&e=webp&nll=true" className="w-52 absolute top-0 right-80 z-0" />
         <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-b4882ee6-9a76-4d9a-a2ad-37e5b3868afd.png?w=433&e=webp&nll=true" className="w-52 absolute top-20 right-36 z-0" />
         <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-977f0a22-0cbe-4886-82ab-b638bd45eab2.png?w=433&e=webp&nll=true" className="w-52 absolute bottom-40 right-32 z-10" />
-      </div>
+      </section>
       {/* short Abouts us */}
-      <div className="w-full h-auto mt-20 p-56">
+      <section className="w-full h-auto mt-20 p-56">
         <p className="text-4xl font-black text-[#B2B2B2] text-center">Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡ based in Pakistan.
           I specialize in building modern, high-performing web applications that are fast, scalable, and user-friendly. From crafting clean front-end experiences with React & Tailwind CSS to developing robust back-end solutions with Node.js and MongoDB, I love turning ideas into impactful digital products that really work.</p>
-      </div>
-      <div className="w-full h-auto pb-20">
+      </section>
+      <section className="w-full h-auto pb-20">
         <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[170px] rotate-[-2deg]">Work</h1>
         <h2 className="text-right leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter">buildnthat</h2>
         <h2 className="text-right uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter">speaks</h2>
         <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl">Peek into a lineup of projects where logic meets innovation.</p>
-      </div>
+      </section>
+      <section className="w-full h-auto flex flex-wrap justify-start items-center gap-5 mt-20">
+        <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10">
+          <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
+            <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter">THE EXIT INTERVIEW</h1>
+            <h1 className=" text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">The Developer’s Experiment</h1>
+          </div>
+          <div className=" w-full h-auto flex items-center justify-center">
+            <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-136c2817-193b-4170-8397-2b27c242b5d5.png?e=webp&nll=true&cX=0&cY=0.5&cW=1368&cH=1182" className="w-full rotate-10" />
+          </div>
+        </div>
+        <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10">
+          <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
+            <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter">THE STUDIO</h1>
+            <h1 className=" text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">a home for Musician</h1>
+          </div>
+          <div className=" w-full h-auto flex items-center justify-center">
+            <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-60810f65-1f66-440a-a5b9-4e7db2771219.png?w=1459&e=webp&nll=true" className="w-full rotate-20" />
+          </div>
+        </div>
+        <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10">
+          <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
+            <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter">THE STUDIO</h1>
+            <h1 className=" text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">a home for Musician</h1>
+          </div>
+          <div className=" w-full h-auto flex items-center justify-center">
+            <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-60810f65-1f66-440a-a5b9-4e7db2771219.png?w=1459&e=webp&nll=true" className="w-full rotate-20" />
+          </div>
+        </div>
+      </section>
+      <section className="w-full h-auto mt-10">
+        <Design />
+      </section>
+      <section className="w-full h-auto mt-10">
+        <Contact/>
+      </section>
     </main>
   );
 }
