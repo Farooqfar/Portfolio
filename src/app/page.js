@@ -26,7 +26,13 @@ export default function Home() {
       {/* short Abouts us */}
       <div className="w-full h-auto mt-20 p-56">
         <p className="text-4xl font-black text-[#B2B2B2] text-center">Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡ based in Pakistan.
-I specialize in building modern, high-performing web applications that are fast, scalable, and user-friendly. From crafting clean front-end experiences with React & Tailwind CSS to developing robust back-end solutions with Node.js and MongoDB, I love turning ideas into impactful digital products that really work.</p>
+          I specialize in building modern, high-performing web applications that are fast, scalable, and user-friendly. From crafting clean front-end experiences with React & Tailwind CSS to developing robust back-end solutions with Node.js and MongoDB, I love turning ideas into impactful digital products that really work.</p>
+      </div>
+      <div className="w-full h-auto pb-20">
+        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[170px] rotate-[-2deg]">Work</h1>
+        <h2 className="text-right leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter">buildnthat</h2>
+        <h2 className="text-right uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter">speaks</h2>
+        <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl">Peek into a lineup of projects where logic meets innovation.</p>
       </div>
     </main>
   );

@@ -5,7 +5,7 @@ export default function Navbar() {
                 <li className="text-white text-2xl  font-black cursor-pointer">Home</li>
                 <li className="text-white text-2xl  font-black cursor-pointer">Work</li>
                 <li className="text-white text-2xl  font-black cursor-pointer">About</li>
-                <li className="text-white text-2xl fontt-black cursor-pointer">Contact</li>
+                <li className="text-white text-2xl font-black cursor-pointer">Contact</li>
             </ul>
         </nav>
     )
