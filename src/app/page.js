@@ -55,7 +55,7 @@ export default function Home() {
         <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full">
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
             <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter">THE EXIT INTERVIEW</h1>
-            <h1 className=" text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">The Developer’s Experiment</h1>
+            <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">The Developer’s Experiment</h1>
           </div>
           <div className=" w-full h-auto flex items-center justify-center">
             <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-136c2817-193b-4170-8397-2b27c242b5d5.png?e=webp&nll=true&cX=0&cY=0.5&cW=1368&cH=1182" className="w-full rotate-10" />
@@ -64,7 +64,7 @@ export default function Home() {
         <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full">
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
             <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter">THE STUDIO</h1>
-            <h1 className=" text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">a home for Musician</h1>
+            <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">a home for Musician</h1>
           </div>
           <div className=" w-full h-auto flex items-center justify-center">
             <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-60810f65-1f66-440a-a5b9-4e7db2771219.png?w=1459&e=webp&nll=true" className="w-full rotate-20" />
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full">
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
             <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter">THE STUDIO</h1>
-            <h1 className=" text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">a home for Musician</h1>
+            <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter">a home for Musician</h1>
           </div>
           <div className=" w-full h-auto flex items-center justify-center">
             <img src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-60810f65-1f66-440a-a5b9-4e7db2771219.png?w=1459&e=webp&nll=true" className="w-full rotate-20" />
