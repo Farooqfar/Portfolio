@@ -82,7 +82,7 @@ export default function Home() {
       <section className="w-full h-auto mt-10">
         <Design />
       </section>
-      <section className="w-full h-auto mt-10">
+      <section className="w-full  mt-10">
         <Contact/>
       </section>
     </main>
