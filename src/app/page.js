@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Design from "./components/Design";
 import Contact from './components/Contact';
 export default function Home() {
