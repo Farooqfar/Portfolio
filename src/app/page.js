@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import Design from "./components/Design";
 import Contact from "./components/Contact";
 export default function Home() {
@@ -6,7 +8,11 @@ export default function Home() {
       <section className="relative w-full h-auto ">
         <div className="w-full h-auto flex gap-15 max-lg:flex-col max-lg:justify-center">
           {/* h1 heading */}
-          <div className="relative w-[50%] max-lg:w-full max-lg:justify-center max-lg:flex">
+          <motion.div
+            className="relative w-[50%] max-lg:w-full max-lg:justify-center max-lg:flex"
+            initial={{ opacity: 0, y: 3 }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+          >
             <h1 className="relative text-[210px] leading-[270px] font-black  text-white uppercase z-10 scale-y-150 max-sm:text-[125px]">
               full
             </h1>
@@ -30,9 +36,14 @@ export default function Home() {
               src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-b5b3a6ae-e2ab-4446-b1a2-d035a09f204b.png?w=433&e=webp&nll=true"
               className="w-52 absolute top-64 left-[29vw] z-0 max-sm:w-36"
             />
-          </div>
+          </motion.div>
           {/* h2 heading */}
-          <div className="relative flex top-28 w-[50%]  max-lg:w-full max-lg:justify-center max-lg:left-0 max-lg:top-28 max-xl:left-5 max-xl:top-44">
+          <motion.div
+            className="relative flex top-28 w-[50%]  max-lg:w-full max-lg:justify-center max-lg:left-0 max-lg:top-28 max-xl:left-5 max-xl:top-44"
+            initial={{ opacity: 0, y: 5 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+          >
             <h1 className="relative left-[-25px] text-[200px] leading-[270px] font-black text-white uppercase z-10 scale-y-150 max-lg:text-[185px] max-xl:text-[12vw] max-2xl:text-[165px] max-sm:text-[90px] max-sm:text-center max-sm:ml-11">
               stack
             </h1>
@@ -52,10 +63,15 @@ export default function Home() {
               src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-977f0a22-0cbe-4886-82ab-b638bd45eab2.png?w=433&e=webp&nll=true"
               className="w-52 absolute top-44 right-[60px] z-10 max-sm:w-36"
             />
-          </div>
+          </motion.div>
         </div>
         {/* h3 heading */}
-        <div className="relative w-full max-lg:top-10">
+        <motion.div
+          className="relative w-full max-lg:top-10"
+          initial={{ opacity: 0, x: -100, y: 4 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
+          transition={{ duration: 4 }}
+        >
           <h1 className="relative top-[-30px] text-[200px] text-center text-transparent leading-[270px] font-black uppercase pt-24 [-webkit-text-stroke:3px_white] scale-y-150 z-10 max-xl:text-[165px] max-lg:text-[210px] ">
             <span className="hidden max-lg:inline max-sm:text-[153px]">
               dev
@@ -76,29 +92,35 @@ export default function Home() {
             src="https://i-p.rmcdn.net/6169a98c239f1d001467eba5/5146291/image-1e93a821-903c-462a-a300-f845f1f3a235.png?w=433&e=webp&nll=true"
             className="w-52 absolute bottom-0 right-100 z-10 max-lg:right-10 max-sm:w-36"
           />
-        </div>
+        </motion.div>
       </section>
       {/* short Abouts us */}
       <section className="w-full h-auto mt-20 p-56 max-lg:p-10 max-lg:mt-100 max-sm:p-0">
-        <p className="text-4xl font-black text-[#B2B2B2] text-center">
+        <motion.p
+          className="text-4xl font-black text-[#B2B2B2] text-center"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          viewport={{ once: false }}
+        >
           Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡
           based in Pakistan. I specialize in building modern, high-performing
           web applications that are fast, scalable, and user-friendly. From
           crafting clean front-end experiences with React & Tailwind CSS to
           developing robust back-end solutions with Node.js and MongoDB, I love
           turning ideas into impactful digital products that really work.
-        </p>
+        </motion.p>
       </section>
       <section className="w-full h-auto pb-20 max-lg:mt-100">
-        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[170px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
+        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
           Work
         </h1>
-        <h2 className="text-right leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[104px] max-sm:text-[100px] max-sm:text-start max-sm:leading-[100px]">
+        <h2 className="text-right leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[170px] max-lg:leading-[170px] max-sm:text-[100px] max-sm:text-start max-sm:leading-[100px]">
           build
-          <br className="hidden max-sm:block" />
+          <br className="hidden max-lg:block" />
           that
         </h2>
-        <h2 className="text-right uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[110px] max-sm:text-[85px] max-sm:leading-[220px]">
+        <h2 className="text-right uppercase leading-[300px] text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[170px] max-lg:leading-[400px] max-sm:text-[85px] max-sm:leading-[220px]">
           speaks
         </h2>
         <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl max-sm:text-sm max-sm:w-full">

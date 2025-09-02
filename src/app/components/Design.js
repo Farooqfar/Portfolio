@@ -1,3 +1,4 @@
+
 import { GiArchiveResearch } from "react-icons/gi";
 import { PiStrategy } from "react-icons/pi";
 import { SiTestcafe } from "react-icons/si";
@@ -8,7 +9,7 @@ export default function Design() {
   return (
     <main>
       <section className="w-full h-auto mt-32">
-        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[170px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
+        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
         </h1>
         <h1 className="text-right leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-sm:text-[90px] max-sm:leading-[100px]">
