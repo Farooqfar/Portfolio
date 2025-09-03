@@ -112,7 +112,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="relative top-[-30px] text-[200px] text-center text-transparent leading-[270px] font-black uppercase pt-24 [-webkit-text-stroke:3px_white] scale-y-150 z-10 max-xl:tracking-wider max-xl:text-[165px] max-lg:text-[210px] ">
+          <h1 className="relative top-[-30px] text-[200px] text-center text-transparent leading-[270px] font-black uppercase pt-24 [-webkit-text-stroke:3px_white] scale-y-150 z-10  max-xl:text-[165px] max-lg:text-[210px] ">
             <span className="hidden max-lg:inline max-sm:text-[153px]">
               dev
             </span>
@@ -153,7 +153,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ once: false }}
+          
         >
           Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡
           based in Pakistan. I specialize in building modern, high-performing
@@ -167,7 +167,7 @@ export default function Home() {
         className="w-full h-auto pb-20 max-lg:mt-100 overflow-hidden"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.6 }}
       >
         <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
           Work
@@ -214,7 +214,7 @@ export default function Home() {
           className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
         >
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
             <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -239,7 +239,7 @@ export default function Home() {
           className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.4 }}
         >
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
             <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">

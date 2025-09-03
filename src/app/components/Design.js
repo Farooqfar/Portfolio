@@ -1,4 +1,5 @@
-
+"use client";
+import { motion, useScroll, useTransform } from "motion/react";
 import { GiArchiveResearch } from "react-icons/gi";
 import { PiStrategy } from "react-icons/pi";
 import { SiTestcafe } from "react-icons/si";
@@ -8,7 +9,12 @@ import { FaRepeat } from "react-icons/fa6";
 export default function Design() {
   return (
     <main>
-      <section className="w-full h-auto mt-32">
+      <motion.section
+        className="w-full h-auto mt-32"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
         </h1>
@@ -19,9 +25,14 @@ export default function Design() {
           It’s not just about making things pretty — it’s about making them
           count.
         </p>
-      </section>
-      <section className="w-auto h-auto mt-32 flex gap-32 overflow-hidden">
-        <div className="w-100 flex flex-col items-center">
+      </motion.section>
+      <section className="w-auto h-auto mt-32 flex gap-32 overflow-hidden flex-wrap">
+        <motion.div
+          className="w-100 flex flex-col items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <GiArchiveResearch className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
             -1-
@@ -33,8 +44,13 @@ export default function Design() {
             Digging into insights and user needs to uncover the story behind the
             solution.
           </p>
-        </div>
-        <div className="w-100 flex flex-col items-center">
+        </motion.div>
+        <motion.div
+          className="w-100 flex flex-col items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <PiStrategy className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
             -2-
@@ -46,8 +62,13 @@ export default function Design() {
             Mapping out the vision and strategy to align creativity with goals.
             Clarity meets purpose here.
           </p>
-        </div>
-        <div className="w-100 flex flex-col items-center">
+        </motion.div>
+        <motion.div
+          className="w-100 flex flex-col items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <SiAltiumdesigner className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
             -3-
@@ -59,8 +80,13 @@ export default function Design() {
             Where the magic happens! From concepts to visuals, its all about
             bringing bold ideas to life.
           </p>
-        </div>
-        <div className="w-100 flex flex-col items-center ">
+        </motion.div>
+        <motion.div
+          className="w-100 flex flex-col items-center "
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <FaCode className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
             -4-
@@ -72,8 +98,13 @@ export default function Design() {
             Turning designs into reality with seamless development that bridges
             form and function.
           </p>
-        </div>
-        <div className="w-100 flex flex-col items-center">
+        </motion.div>
+        <motion.div
+          className="w-100 flex flex-col items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <SiTestcafe className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
             -4-
@@ -85,8 +116,13 @@ export default function Design() {
             Fine-tuning every detail through testing to ensure it works
             beautifully for users.
           </p>
-        </div>
-        <div className="w-100 flex flex-col items-center">
+        </motion.div>
+        <motion.div
+          className="w-100 flex flex-col items-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+        >
           <FaRepeat className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
             -4-
@@ -98,13 +134,13 @@ export default function Design() {
             Refining, evolving, and growing—because great design is never one
             and done.
           </p>
-        </div>
+        </motion.div>
       </section>
       <section className="w-full h-auto mt-80">
         <marquee
           scrollamount="5"
           loop="-1"
-          class="text-9xl font-black text-white scale-y-150 max-sm:text-5xl"
+          className="text-9xl h-auto p-3 font-black text-white scale-y-150 max-sm:text-5xl"
         >
           <span className="text-transparent [-webkit-text-stroke:1px_white]">
             SAY
