@@ -112,7 +112,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="relative top-[-30px] text-[200px] text-center text-transparent leading-[270px] font-black uppercase pt-24 [-webkit-text-stroke:3px_white] scale-y-150 z-10 max-xl:text-[165px] max-lg:text-[210px] ">
+          <h1 className="relative top-[-30px] text-[200px] text-center text-transparent leading-[270px] font-black uppercase pt-24 [-webkit-text-stroke:3px_white] scale-y-150 z-10 max-xl:tracking-wider max-xl:text-[165px] max-lg:text-[210px] ">
             <span className="hidden max-lg:inline max-sm:text-[153px]">
               dev
             </span>
@@ -187,8 +187,8 @@ export default function Home() {
       <section className="w-full h-auto flex flex-wrap justify-start items-center gap-5 mt-20 overflow-hidden">
         <motion.div
           className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
@@ -212,8 +212,8 @@ export default function Home() {
         </motion.div>
         <motion.div
           className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, x: 200 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
@@ -235,7 +235,12 @@ export default function Home() {
             />
           </div>
         </motion.div>
-        <div className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full">
+        <motion.div
+          className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
             <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
               THE STUDIO
@@ -254,7 +259,7 @@ export default function Home() {
               className="w-full rotate-20"
             />
           </div>
-        </div>
+        </motion.div>
       </section>
       <section className="w-full h-auto mt-10 overflow-hidden">
         <Design />
