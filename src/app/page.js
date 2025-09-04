@@ -153,7 +153,6 @@ export default function Home() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          
         >
           Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡
           based in Pakistan. I specialize in building modern, high-performing
@@ -264,6 +263,7 @@ export default function Home() {
       <section className="w-full h-auto mt-10 overflow-hidden">
         <Design />
       </section>
+
       <section className="w-full h-auto mt-10 overflow-hidden">
         <Contact />
       </section>

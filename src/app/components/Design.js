@@ -1,4 +1,6 @@
 "use client";
+import dynamic from "next/dynamic";
+const About = dynamic(() => import("./About"), { ssr: false });
 import { motion, useScroll, useTransform } from "motion/react";
 import { GiArchiveResearch } from "react-icons/gi";
 import { PiStrategy } from "react-icons/pi";
@@ -6,6 +8,7 @@ import { SiTestcafe } from "react-icons/si";
 import { SiAltiumdesigner } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { FaRepeat } from "react-icons/fa6";
+
 export default function Design() {
   return (
     <main>
@@ -15,10 +18,10 @@ export default function Design() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
+        <h1 className="text-left font-[cursive] p-5 text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
         </h1>
-        <h1 className="text-right leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-sm:text-[90px] max-sm:leading-[100px]">
+        <h1 className="text-right leading-[170px] p-5 uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-sm:text-[90px] max-sm:leading-[100px]">
           Ideas into <br /> Impact
         </h1>
         <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl max-lg:mt-32 max-sm:text-sm max-sm:w-full">
@@ -26,7 +29,7 @@ export default function Design() {
           count.
         </p>
       </motion.section>
-      <section className="w-auto h-auto mt-32 flex gap-32 overflow-hidden flex-wrap">
+      <section className="w-auto h-auto mt-32 flex justify-center gap-32 overflow-hidden flex-wrap">
         <motion.div
           className="w-100 flex flex-col items-center"
           initial={{ opacity: 0, y: 30 }}
@@ -135,6 +138,9 @@ export default function Design() {
             and done.
           </p>
         </motion.div>
+      </section>
+      <section className="w-full h-auto mt-10 overflow-hidden">
+        <About />
       </section>
       <section className="w-full h-auto mt-80">
         <marquee
