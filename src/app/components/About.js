@@ -17,10 +17,10 @@ export default function About() {
           My focus ✎ is on crafting digital experiences that truly connect 🔗
           with people.
         </p>
-        <div className="w-full h-auto mt-52 flex justify-center gap-8 items-start">
-          <div className="w-[50%] h-auto flex flex-col items-end justify-start">
-            <div>
-              <p className="w-100 text-[#C8C8C8] font-bold text-2xl text-start ">
+        <div className="w-full h-auto mt-52 flex justify-center gap-8 items-start max-lg:gap-4 max-sm:flex-col max-sm:items-center">
+          <div className="w-[50%] h-auto flex flex-col items-end justify-start max-sm:justify-center">
+            <div className="w-auto">
+              <p className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-full">
                 I’ve had the opportunity to work with some amazing teams and
                 projects, building full-stack applications with the MERN stack.
                 From front-end interfaces that look and feel great to back-end
@@ -36,9 +36,9 @@ export default function About() {
               </a>
             </div>
           </div>
-          <div className="w-[50%] flex flex-col justify-start items-start gap-20">
-            <Image src="/profile.jpg" width={250} height={250} />
-            <p className="w-100 text-[#C8C8C8] font-bold text-2xl text-start ">
+          <div className="w-[50%] flex flex-col justify-start items-start gap-20 max-sm:justify-center max-sm:items-center">
+            <Image src="/profile.jpg" width={260} height={260} />
+            <p className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-80">
               When I’m not coding, you’ll usually find me exploring new
               technologies, solving real-world problems, or sketching out ideas
               for my next project
