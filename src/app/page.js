@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 
 const Design = dynamic(() => import("./components/Design"), { ssr: false });
 const Contact = dynamic(() => import("./components/Contact"), { ssr: false });
-
+const Card = dynamic(() => import("./components/Cards"), { ssr: false });
 import { motion } from "motion/react";
 import Image from "next/image";
 export default function Home() {
@@ -183,83 +183,7 @@ export default function Home() {
           Peek into a lineup of projects where logic meets innovation.
         </p>
       </motion.section>
-      <section className="w-full h-auto flex flex-wrap justify-start items-center gap-5 mt-20 overflow-hidden">
-        <motion.div
-          className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
-            <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
-              THE EXIT INTERVIEW
-            </h1>
-            <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter max-sm:text-3xl max-sm:mt-4">
-              The Developer’s Experiment
-            </h1>
-          </div>
-          <div className=" w-full h-auto flex items-center justify-center">
-            <Image
-              src="/13.webp"
-              alt="Loading"
-              width={100}
-              height={100}
-              loading="lazy"
-              className="w-full rotate-10"
-            />
-          </div>
-        </motion.div>
-        <motion.div
-          className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
-            <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
-              THE STUDIO
-            </h1>
-            <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter max-sm:text-3xl max-sm:mt-4">
-              a home for Musician
-            </h1>
-          </div>
-          <div className=" w-full h-auto flex items-center justify-center">
-            <Image
-              src="/14.webp"
-              alt="Loading"
-              width={100}
-              height={100}
-              loading="lazy"
-              className="w-full rotate-20"
-            />
-          </div>
-        </motion.div>
-        <motion.div
-          className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
-            <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
-              THE STUDIO
-            </h1>
-            <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter max-sm:text-3xl max-sm:mt-4">
-              a home for Musician
-            </h1>
-          </div>
-          <div className=" w-full h-auto flex items-center justify-center">
-            <Image
-              src="/14.webp"
-              alt="Loading"
-              width={100}
-              height={100}
-              loading="lazy"
-              className="w-full rotate-20"
-            />
-          </div>
-        </motion.div>
-      </section>
+      <Card />
       <section className="w-full h-auto mt-10 overflow-hidden">
         <Design />
       </section>
