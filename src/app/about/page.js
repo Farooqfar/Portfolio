@@ -7,7 +7,7 @@ export default function page() {
         <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center max-sm:text-[125px]">
           about
         </h1>
-        <p>
+        <p className="text-white text-4xl text-center">
           Hey there ✰! I’m Muhammad Farooq, a passionate Web Developer 💻 based
           in Pakistan. I spend my time turning ideas into interactive,
           responsive, and impactful digital experiences—making websites not only

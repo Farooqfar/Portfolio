@@ -33,7 +33,7 @@ export default function Navbar() {
             pathname === "/contact" ? "line-through" : ""
           }`}
         >
-          Contact
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </nav>
