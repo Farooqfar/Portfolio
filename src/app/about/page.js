@@ -2,9 +2,11 @@ import React from "react";
 
 export default function page() {
   return (
-    <main>
-      <section>
-        <h1>about</h1>
+    <main className="w-full">
+      <section className="w-full">
+        <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center max-sm:text-[125px]">
+          about
+        </h1>
         <p>
           Hey there ✰! I’m Muhammad Farooq, a passionate Web Developer 💻 based
           in Pakistan. I spend my time turning ideas into interactive,
