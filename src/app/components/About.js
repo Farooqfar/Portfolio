@@ -7,7 +7,7 @@ export default function About() {
       <h1 className="mt-20 text-center text-[200px] font-[cursive] font-black text-white leading-[200px] scale-y-150 tracking-tighter max-lg:text-[166px] max-sm:text-7xl max-sm:leading-20">
         About
       </h1>
-      <h1 className="pt-18 text-center text-[200px] font-black text-transparent uppercase [-webkit-text-stroke:3px_white] leading-[160px] scale-y-150 tracking-tighter max-lg:text-[166px] max-sm:text-7xl max-sm:leading-20">
+      <h1 className="pt-28 text-center text-[200px] font-black text-transparent uppercase [-webkit-text-stroke:3px_white] leading-[160px] scale-y-150 tracking-tighter max-lg:text-[166px] max-sm:text-7xl max-sm:leading-20">
         beyond code
       </h1>
       <div className="mt-52 flex flex-col items-center justify-center">

@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 const Profile = dynamic(() => import("../components/Profile"), { ssr: false });
+const Design = dynamic(() => import("../components/Design"), { ssr: false });
 export default function page() {
   return (
     <main>
@@ -29,6 +30,9 @@ export default function page() {
       </section>
       <section className="mt-20">
         <Profile />
+      </section>
+      <section className="p-5">
+        <Design />
       </section>
     </main>
   );

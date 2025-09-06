@@ -8,8 +8,10 @@ import { SiTestcafe } from "react-icons/si";
 import { SiAltiumdesigner } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 import { FaRepeat } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
 
 export default function Design() {
+  const pathname = usePathname();
   return (
     <main>
       <motion.section
@@ -139,7 +141,11 @@ export default function Design() {
           </p>
         </motion.div>
       </section>
-      <section className="w-full h-auto mt-10 overflow-hidden">
+      <section
+        className={`w-full h-auto mt-10 overflow-hidden ${
+          pathname === "/" ? "block" : "hidden"
+        }`}
+      >
         <About />
       </section>
       <section className="w-full h-auto mt-80">
