@@ -110,7 +110,7 @@ export default function Design() {
         >
           <SiTestcafe className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
-            -4-
+            -5-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             TEST
@@ -128,7 +128,7 @@ export default function Design() {
         >
           <FaRepeat className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
-            -4-
+            -6-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             REPEAT
