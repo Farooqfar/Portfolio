@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 const Card = dynamic(() => import("../components/Cards"), { ssr: false });
 const Design = dynamic(() => import("../components/Design"), { ssr: false });
 const Contact = dynamic(() => import("../components/Contact"), { ssr: false });
-export default function page() {
+export default function Page() {
   return (
     <main className=" selection:bg-green-400 selection:text-black">
       <section className="w-full pt-32 p-5">

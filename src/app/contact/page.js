@@ -2,6 +2,6 @@
 import dynamic from "next/dynamic";
 const Contact = dynamic(() => import("../components/Contact"), { ssr: false });
 
-export default function page() {
+export default function Page() {
   return <Contact />;
 }
