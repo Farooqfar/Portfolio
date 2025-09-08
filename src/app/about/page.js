@@ -109,13 +109,15 @@ export default function page() {
             (and do well)
           </h2>
         </div>
-        <h1 className="text-white text-9xl font-black text-center mt-32">Technology</h1>
+        <h1 className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl">
+          Technology
+        </h1>
         <div className="w-full flex justify-center items-center gap-10 flex-wrap h-auto">
           {Skill.map((skill, index) => {
             return (
               <div
                 key={index}
-                className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 "
+                className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
               >
                 <h1 className="text-white text-9xl font-black">{skill.icon}</h1>
 

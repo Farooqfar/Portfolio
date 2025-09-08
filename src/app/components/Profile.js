@@ -24,7 +24,7 @@ export default function Profile() {
           </div>
         </div>
         <div className="w-[50%] flex flex-col justify-start items-start gap-20 max-sm:justify-center max-sm:items-center max-sm:w-[100%]">
-          <Image src="/profile.jpg" width={260} height={260} />
+          <Image src="/profile.jpg" alt="profile" width={260} height={260} />
           <p className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-80">
             When I’m not coding, you’ll usually find me exploring new
             technologies, solving real-world problems, or sketching out ideas
