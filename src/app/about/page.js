@@ -9,6 +9,9 @@ import { FaJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { FaNode } from "react-icons/fa";
 export default function page() {
   const [Skill, setskill] = useState([
     {
@@ -46,6 +49,24 @@ export default function page() {
       name: "Next",
       description:
         "Next.js is like React on steroids — it makes websites faster, smarter, and ready for the real world.",
+    },
+    {
+      icon: <FaNode />,
+      name: "Node Js",
+      description:
+        "Node.js is like giving JavaScript superpowers — it lets you run it on the server, not just in the browser.",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express Js",
+      description:
+        "Express.js is like a fast delivery service for websites — it helps your server handle requests and send back responses quickly.",
+    },
+    {
+      icon: <DiMongodb />,
+      name: "MongoDB",
+      description:
+        "MongoDB is like a flexible digital filing cabinet — it stores data in a way thats easy to organize and scale.",
     },
   ]);
   return (
@@ -88,10 +109,14 @@ export default function page() {
             (and do well)
           </h2>
         </div>
-        <div className="w-full flex justify-center items-center gap-20 flex-wrap h-auto">
-          {Skill.map((skill) => {
+        <h1 className="text-white text-9xl font-black text-center mt-32">Technology</h1>
+        <div className="w-full flex justify-center items-center gap-10 flex-wrap h-auto">
+          {Skill.map((skill, index) => {
             return (
-              <div className="text-white border-2 border-white w-100 h-100 flex flex-col justify-around items-center p-10 ">
+              <div
+                key={index}
+                className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 "
+              >
                 <h1 className="text-white text-9xl font-black">{skill.icon}</h1>
 
                 <h1 className="text-white text-5xl font-black">{skill.name}</h1>
