@@ -19,7 +19,7 @@ import { FaServer } from "react-icons/fa";
 import { MdDeveloperMode } from "react-icons/md";
 
 export default function page() {
-  const [Skill, setskill] = useState([
+  const [Skill, useSkill] = useState([
     {
       icon: <FaHtml5 />,
       name: "HTML",
