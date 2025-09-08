@@ -1,8 +1,53 @@
 "use client";
 import dynamic from "next/dynamic";
+import { useState } from "react";
 const Profile = dynamic(() => import("../components/Profile"), { ssr: false });
 const Design = dynamic(() => import("../components/Design"), { ssr: false });
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaJs } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
 export default function page() {
+  const [Skill, setskill] = useState([
+    {
+      icon: <FaHtml5 />,
+      name: "HTML",
+      description:
+        "HTML is like the skeleton of a webpage — it gives structure to everything you see on the internet.",
+    },
+    {
+      icon: <FaCss3Alt />,
+      name: "CSS",
+      description:
+        "CSS is like the clothes and colors of a webpage — it makes websites look stylish and beautiful.",
+    },
+    {
+      icon: <RiTailwindCssFill />,
+      name: "Tailwind",
+      description:
+        "Tailwind CSS is like a magic toolkit of ready-made styles — it helps you design websites quickly without writing endless CSS.",
+    },
+    {
+      icon: <FaJs />,
+      name: "JavaScript",
+      description:
+        "JavaScript is like the brain of a webpage — it makes websites think, act, and respond to you.",
+    },
+    {
+      icon: <FaReact />,
+      name: "React",
+      description:
+        "React is like a box of reusable Lego blocks — you build websites by snapping pieces together.",
+    },
+    {
+      icon: <RiNextjsFill />,
+      name: "Next",
+      description:
+        "Next.js is like React on steroids — it makes websites faster, smarter, and ready for the real world.",
+    },
+  ]);
   return (
     <main>
       <section className="w-full pt-32 p-5 flex flex-col justify-center items-center">
@@ -31,8 +76,8 @@ export default function page() {
       <section className="mt-20">
         <Profile />
       </section>
-      <section className="w-full min-h-full overflow-hidden p-5 mt-32 pb-10">
-        <div>
+      <section className="w-full min-h-full p-5 mt-32 pb-10 flex flex-col gap-32">
+        <div className="w-full h-auto">
           <h1 className="text-right font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[150px] max-sm:text-[70px] max-sm:leading-[200px]">
             Expertise
           </h1>
@@ -40,8 +85,21 @@ export default function page() {
             what i do
           </h2>
           <h2 className="mt-20 text-right pr-3 leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[100px] max-lg:leading-[100px] max-sm:text-[80px] max-sm:text-start max-sm:leading-[80px] max-sm:mt-32">
-           (and do well)
+            (and do well)
           </h2>
+        </div>
+        <div className="w-full flex justify-center items-center gap-20 flex-wrap h-auto">
+          {Skill.map((skill) => {
+            return (
+              <div className="text-white border-2 border-white w-100 h-100 flex flex-col justify-around items-center p-10 ">
+                <h1 className="text-white text-9xl font-black">{skill.icon}</h1>
+
+                <h1 className="text-white text-5xl font-black">{skill.name}</h1>
+
+                <p className="text-white text-center">{skill.description}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
       <section className="p-5">
