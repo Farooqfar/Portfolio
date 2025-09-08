@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
 export default function Cards() {
   return (
     <section className="w-full h-auto flex flex-wrap justify-start items-center gap-5 mt-20 overflow-hidden p-5">
@@ -79,17 +80,24 @@ export default function Cards() {
           />
         </div>
       </motion.div>
+
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
         initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <div className="w-full h-full flex justify-center items-center border-white border-2 rotate-2 bg-black">
-          <div className="w-full h-full flex justify-center items-center border-white border-2 rotate-[-4deg] bg-black">
-            <h1 className="text-white text-6xl text-center">View All</h1>
+        <a
+          href="https://github.com/Farooqfar"
+          target="_blank"
+          className="w-full h-full"
+        >
+          <div className="w-full h-full flex justify-center items-center border-white border-2 rotate-2 bg-black">
+            <div className="w-full h-full flex justify-center items-center border-white border-2 rotate-[-4deg] bg-black">
+              <h1 className="text-white text-6xl text-center">View All</h1>
+            </div>
           </div>
-        </div>
+        </a>
       </motion.div>
     </section>
   );

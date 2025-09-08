@@ -1,8 +1,10 @@
 "use client";
 import dynamic from "next/dynamic";
 import { useState } from "react";
+import Image from "next/image";
 const Profile = dynamic(() => import("../components/Profile"), { ssr: false });
 const Design = dynamic(() => import("../components/Design"), { ssr: false });
+const Contact = dynamic(() => import("../components/Contact"), { ssr: false });
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";
@@ -12,6 +14,10 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+import { FaServer } from "react-icons/fa";
+import { MdDeveloperMode } from "react-icons/md";
+
 export default function page() {
   const [Skill, setskill] = useState([
     {
@@ -69,10 +75,18 @@ export default function page() {
         "MongoDB is like a flexible digital filing cabinet — it stores data in a way thats easy to organize and scale.",
     },
   ]);
+
   return (
-    <main>
+    <main className="selection:bg-green-400 selection:text-black">
       <section className="w-full pt-32 p-5 flex flex-col justify-center items-center">
-        <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center max-sm:text-[90px] max-lg:text-[190px]">
+        <Image
+          src="/profile.jpg"
+          alt="profile"
+          width={400}
+          height={400}
+          className="absolute top-20 left-[38%]"
+        />
+        <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center z-20 max-sm:text-[90px] max-lg:text-[190px]">
           about
         </h1>
         <p className="mt-72 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full">
@@ -128,9 +142,41 @@ export default function page() {
             );
           })}
         </div>
+        <h1 className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl">
+          Services
+        </h1>
+        <div className="w-full flex justify-center items-center gap-10 flex-wrap h-auto">
+          <div className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full ">
+            <h1 className="text-white text-9xl font-black">
+              <CgWebsite />
+            </h1>
+            <h1 className="text-white text-5xl font-black text-center">
+              Full Stack Website
+            </h1>
+          </div>
+          <div className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full ">
+            <h1 className="text-white text-9xl font-black">
+              <MdDeveloperMode />
+            </h1>
+            <h1 className="text-white text-5xl font-black text-center">
+              Front-End Development
+            </h1>
+          </div>
+          <div className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full ">
+            <h1 className="text-white text-9xl font-black">
+              <FaServer />
+            </h1>
+            <h1 className="text-white text-5xl font-black text-center">
+              Back-End Development
+            </h1>
+          </div>
+        </div>
       </section>
       <section className="p-5">
         <Design />
+      </section>
+      <section>
+        <Contact />
       </section>
     </main>
   );
