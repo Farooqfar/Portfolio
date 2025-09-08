@@ -18,7 +18,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaServer } from "react-icons/fa";
 import { MdDeveloperMode } from "react-icons/md";
 
-export default function page() {
+export default function Page() {
   const [Skill, useSkill] = useState([
     {
       icon: <FaHtml5 />,
