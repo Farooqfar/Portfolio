@@ -31,6 +31,19 @@ export default function page() {
       <section className="mt-20">
         <Profile />
       </section>
+      <section className="w-full min-h-full overflow-hidden p-5 mt-32 pb-10">
+        <div>
+          <h1 className="text-right font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[150px] max-sm:text-[70px] max-sm:leading-[200px]">
+            Expertise
+          </h1>
+          <h2 className="text-right pr-3 leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[130px] max-lg:leading-[130px] max-sm:text-[100px] max-sm:text-start max-sm:leading-[100px] max-sm:mb-14">
+            what i do
+          </h2>
+          <h2 className="mt-20 text-right pr-3 leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[100px] max-lg:leading-[100px] max-sm:text-[80px] max-sm:text-start max-sm:leading-[80px] max-sm:mt-32">
+           (and do well)
+          </h2>
+        </div>
+      </section>
       <section className="p-5">
         <Design />
       </section>
