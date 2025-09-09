@@ -23,7 +23,7 @@ export default function Design() {
         <h1 className="text-left font-[cursive] p-5 text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
         </h1>
-        <h1 className="text-right leading-[170px] p-5 uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-sm:text-[90px] max-sm:leading-[100px]">
+        <h1 className="text-right leading-[170px] p-5 uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-sm:text-[85px] max-sm:leading-[100px]">
           Ideas into <br /> Impact
         </h1>
         <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl max-lg:mt-32 max-sm:text-sm max-sm:w-full">
