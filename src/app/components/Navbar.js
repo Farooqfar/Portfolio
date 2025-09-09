@@ -10,7 +10,7 @@ export default function Navbar() {
   console.log(menu);
   return (
     <nav
-      className={`relative w-full h-auto p-8 flex items-center justify-center flex-row ${
+      className={`relative w-full h-auto p-8 flex items-center justify-center flex-row transition-all duration-150 delay-75 ${
         menu ? "max-md:w-full max-md:h-screen max-md:flex-col max-md:z-30" : ""
       }`}
     >
