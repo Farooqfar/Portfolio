@@ -11,10 +11,10 @@ export default function Navbar() {
   return (
     <nav
       className={`relative w-full h-auto p-8 flex items-center justify-center flex-row ${
-        menu ? "max-md:w-full max-md:h-screen max-md:flex-col" : ""
+        menu ? "max-md:w-full max-md:h-screen max-md:flex-col max-md:z-30" : ""
       }`}
     >
-      <ul className="absolute top-1 right-5 hidden max-md:block bg-amber-700">
+      <ul className="absolute top-2 right-1 hidden max-md:block">
         <li className="flex">
           <button
             className="text-white text-4xl"
@@ -36,7 +36,7 @@ export default function Navbar() {
       <ul
         className={`flex justify-center items-center gap-10 ${
           menu
-            ? "max-md:block max-md:w-[100%] max-md:h-[100%] max-md:bg-amber-300 max-md:flex-col max-md:justify-center max-md:items-center"
+            ? "max-md:w-[100%] max-md:h-[100%] max-md: bg-black/50 max-md:flex-col max-md:justify-center max-md:items-center"
             : "max-md:hidden"
         }`}
       >
@@ -44,6 +44,7 @@ export default function Navbar() {
           className={`text-white text-2xl  font-black cursor-pointer transition-all duration-500 ease-in-out ${
             pathname === "/" ? "line-through" : ""
           }`}
+          onClick={() => setMenu(false)}
         >
           <Link href="/">Home</Link>
         </li>
@@ -51,6 +52,7 @@ export default function Navbar() {
           className={`text-white text-2xl  font-black cursor-pointer transition-all duration-500 ease-in-out ${
             pathname === "/work" ? "line-through" : ""
           }`}
+          onClick={() => setMenu(false)}
         >
           <Link href="/work">Work</Link>
         </li>
@@ -58,6 +60,7 @@ export default function Navbar() {
           className={`text-white text-2xl  font-black cursor-pointer transition-all duration-500 ease-in-out ${
             pathname === "/about" ? "line-through" : ""
           }`}
+          onClick={() => setMenu(false)}
         >
           <Link href="/about">About</Link>
         </li>
@@ -65,6 +68,7 @@ export default function Navbar() {
           className={`text-white text-2xl  font-black cursor-pointer transition-all duration-500 ease-in-out ${
             pathname === "/contact" ? "line-through" : ""
           }`}
+          onClick={() => setMenu(false)}
         >
           <Link href="/contact">Contact</Link>
         </li>
