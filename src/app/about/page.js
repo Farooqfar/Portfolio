@@ -79,16 +79,18 @@ export default function Page() {
   return (
     <main className="selection:bg-green-400 selection:text-black">
       <section className="w-full pt-32 p-5 flex flex-col justify-center items-center">
-        <Image
-          src="/profile.jpg"
-          alt="profile"
-          width={400}
-          height={400}
-          className="absolute top-20 left-[38%]"
-        />
-        <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center z-20 max-sm:text-[90px] max-lg:text-[190px]">
-          about
-        </h1>
+        <div className="flex justify-center items-center w-full h-auto">
+          <Image
+            src="/profile.jpg"
+            alt="profile"
+            width={400}
+            height={400}
+            className="absolute max-md:w-64"
+          />
+          <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center z-20 max-sm:text-[90px] max-lg:text-[190px]">
+            about
+          </h1>
+        </div>
         <p className="mt-72 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full">
           Hey there ✰! I’m Muhammad Farooq, a passionate Web Developer 💻 based
           in Pakistan. I spend my time turning ideas into interactive,
