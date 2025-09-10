@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import { motion } from "motion/react";
 import { useState } from "react";
 import Image from "next/image";
 const Profile = dynamic(() => import("../components/Profile"), { ssr: false });
@@ -87,34 +88,59 @@ export default function Page() {
             height={400}
             className="absolute max-md:w-64"
           />
-          <h1 className="text-[210px] text-white scale-y-150 uppercase font-black text-center z-20 max-sm:text-[90px] max-lg:text-[190px]">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            className="text-[210px] text-white scale-y-150 uppercase font-black text-center z-20 max-sm:text-[90px] max-lg:text-[190px]"
+          >
             about
-          </h1>
+          </motion.h1>
         </div>
-        <p className="mt-72 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full">
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="mt-72 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full"
+        >
           Hey there ✰! I’m Muhammad Farooq, a passionate Web Developer 💻 based
           in Pakistan. I spend my time turning ideas into interactive,
           responsive, and impactful digital experiences—making websites not only
           look GREAT but also work even better ☜.
-        </p>
-        <p className="mt-10 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          className="mt-10 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full"
+        >
           For the past year ☟ I’ve been living the ✰ developer dream—taking
           concepts and transforming them into clean, functional, and
           performance-driven code ❀. From front-end design to back-end logic, I
           love building projects that are both creative and technically solid.
-        </p>
-        <p className="mt-10 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full">
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="mt-10 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full"
+        >
           My focus ✎ is always on creating web experiences that truly connect
           with people. Whether it’s crafting smooth UIs, optimizing performance,
           or solving tough coding challenges, I aim to deliver solutions that
           are meaningful, user-friendly, and unforgettable.
-        </p>
+        </motion.p>
       </section>
       <section className="mt-20">
         <Profile />
       </section>
       <section className="w-full min-h-full p-5 mt-32 pb-10 flex flex-col gap-32">
-        <div className="w-full h-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
+          className="w-full h-auto"
+        >
           <h1 className="text-right font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[150px] max-sm:text-[70px] max-sm:leading-[200px]">
             Expertise
           </h1>
@@ -124,14 +150,22 @@ export default function Page() {
           <h2 className="mt-20 text-right pr-3 leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[100px] max-lg:leading-[100px] max-sm:text-[80px] max-sm:text-start max-sm:leading-[80px] max-sm:mt-32">
             (and do well)
           </h2>
-        </div>
-        <h1 className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl">
+        </motion.div>
+        <motion.h1
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl"
+        >
           Technology
-        </h1>
+        </motion.h1>
         <div className="w-full flex justify-center items-center gap-10 flex-wrap h-auto">
           {Skill.map((skill, index) => {
             return (
-              <div
+              <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.2 * index }}
                 key={index}
                 className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
               >
@@ -140,38 +174,58 @@ export default function Page() {
                 <h1 className="text-white text-5xl font-black">{skill.name}</h1>
 
                 <p className="text-white text-center">{skill.description}</p>
-              </div>
+              </motion.div>
             );
           })}
         </div>
-        <h1 className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl">
+        <motion.h1
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
+          className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl"
+        >
           Services
-        </h1>
+        </motion.h1>
         <div className="w-full flex justify-center items-center gap-10 flex-wrap h-auto">
-          <div className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full ">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
+          >
             <h1 className="text-white text-9xl font-black">
               <CgWebsite />
             </h1>
             <h1 className="text-white text-5xl font-black text-center">
               Full Stack Website
             </h1>
-          </div>
-          <div className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
+          >
             <h1 className="text-white text-9xl font-black">
               <MdDeveloperMode />
             </h1>
             <h1 className="text-white text-5xl font-black text-center">
               Front-End Development
             </h1>
-          </div>
-          <div className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
+          >
             <h1 className="text-white text-9xl font-black">
               <FaServer />
             </h1>
             <h1 className="text-white text-5xl font-black text-center">
               Back-End Development
             </h1>
-          </div>
+          </motion.div>
         </div>
       </section>
       <section className="p-5">
