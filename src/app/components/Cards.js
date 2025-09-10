@@ -7,9 +7,9 @@ export default function Cards() {
     <section className="w-full h-auto flex flex-wrap justify-start items-center gap-5 mt-20 overflow-hidden p-5">
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
           <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -32,9 +32,9 @@ export default function Cards() {
       </motion.div>
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
         <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
           <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -57,9 +57,9 @@ export default function Cards() {
       </motion.div>
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
           <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -83,9 +83,9 @@ export default function Cards() {
 
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-        initial={{ opacity: 0, x: -200 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.4 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
         <a
           href="https://github.com/Farooqfar"

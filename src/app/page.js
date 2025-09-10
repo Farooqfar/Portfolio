@@ -152,7 +152,7 @@ export default function Home() {
           className="text-4xl font-black text-[#B2B2B2] text-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3, delay: 0.5 }}
         >
           Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡
           based in Pakistan. I specialize in building modern, high-performing
@@ -166,7 +166,7 @@ export default function Home() {
         className="w-full h-auto pb-20 max-lg:mt-100 overflow-hidden"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.3, delay: 0.4 }}
       >
         <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
           Work

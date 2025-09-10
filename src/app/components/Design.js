@@ -1,7 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 const About = dynamic(() => import("./About"), { ssr: false });
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion } from "motion/react";
 import { GiArchiveResearch } from "react-icons/gi";
 import { PiStrategy } from "react-icons/pi";
 import { SiTestcafe } from "react-icons/si";
@@ -16,9 +16,9 @@ export default function Design() {
     <main>
       <motion.section
         className="w-full h-auto mt-32"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
       >
         <h1 className="text-left font-[cursive] p-5 text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
@@ -34,9 +34,9 @@ export default function Design() {
       <section className="w-auto h-auto mt-32 flex justify-center gap-32 overflow-hidden flex-wrap">
         <motion.div
           className="w-100 flex flex-col items-center"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
         >
           <GiArchiveResearch className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -52,9 +52,9 @@ export default function Design() {
         </motion.div>
         <motion.div
           className="w-100 flex flex-col items-center"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
           <PiStrategy className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -70,9 +70,9 @@ export default function Design() {
         </motion.div>
         <motion.div
           className="w-100 flex flex-col items-center"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
         >
           <SiAltiumdesigner className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -88,9 +88,9 @@ export default function Design() {
         </motion.div>
         <motion.div
           className="w-100 flex flex-col items-center "
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
           <FaCode className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -106,9 +106,9 @@ export default function Design() {
         </motion.div>
         <motion.div
           className="w-100 flex flex-col items-center"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
         >
           <SiTestcafe className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -124,9 +124,9 @@ export default function Design() {
         </motion.div>
         <motion.div
           className="w-100 flex flex-col items-center"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
           <FaRepeat className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
