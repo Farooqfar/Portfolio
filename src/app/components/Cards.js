@@ -16,7 +16,7 @@ export default function Cards() {
             THE EXIT INTERVIEW
           </h1>
           <h1 className="relative top-5 text-[#D3D3D3] text-5xl scale-y-150 font-black uppercase tracking-tighter max-sm:text-3xl max-sm:mt-4">
-            The Developer’s Experiment
+            The Developer&#39;s Experiment
           </h1>
         </div>
         <div className=" w-full h-auto flex items-center justify-center">

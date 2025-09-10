@@ -26,9 +26,9 @@ export default function About() {
           transition={{ duration: 0.3, delay: 0.3 }}
           className="w-[70%] text-[#C8C8C8] font-bold text-4xl text-center "
         >
-          For the past One years, ☟ I’ve been living the ✰ dream — transforming
-          big ideas into code that not only looks incredible but also works
-          seamlessly. but also work like a charm ❀. <br /> <br />
+          For the past One years, ☟ I&#39;ve been living the ✰ dream —
+          transforming big ideas into code that not only looks incredible but
+          also works seamlessly. but also work like a charm ❀. <br /> <br />
           My focus ✎ is on crafting digital experiences that truly connect 🔗
           with people.
         </motion.p>

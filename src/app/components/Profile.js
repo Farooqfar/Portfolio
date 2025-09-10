@@ -14,7 +14,7 @@ export default function Profile() {
               transition={{ duration: 0.3, delay: 0.3 }}
               className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-full"
             >
-              I've had the opportunity to work with some amazing teams and
+              I&#39;ve had the opportunity to work with some amazing teams and
               projects, building full-stack applications with the MERN stack.
               From front-end interfaces that look and feel great to back-end
               systems that run smoothly, I love turning ideas into products that
@@ -40,7 +40,7 @@ export default function Profile() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-80"
           >
-            When I’m not coding, you’ll usually find me exploring new
+            When I&#39;m not coding, you&#39;ll usually find me exploring new
             technologies, solving real-world problems, or sketching out ideas
             for my next project
           </motion.p>

@@ -27,8 +27,8 @@ export default function Design() {
           Ideas into <br /> Impact
         </h1>
         <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl max-lg:mt-32 max-sm:text-sm max-sm:w-full">
-          It’s not just about making things pretty — it’s about making them
-          count.
+          It&#39;s not just about making things pretty — it&#39;s about making
+          them count.
         </p>
       </motion.section>
       <section className="w-auto h-auto mt-32 flex justify-center gap-32 overflow-hidden flex-wrap">
