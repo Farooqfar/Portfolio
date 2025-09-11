@@ -86,7 +86,7 @@ export default function Cards() {
 
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
-        initial={{ opacity: 0, y: 200 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.2, delay: 0.2 }}
         viewport={{ once: true }}
       >
