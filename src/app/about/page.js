@@ -92,6 +92,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
             className="text-[210px] text-white scale-y-150 uppercase font-black text-center z-20 max-sm:text-[90px] max-lg:text-[190px]"
           >
             about
@@ -101,6 +102,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
+          viewport={{ once: true }}
           className="mt-72 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full"
         >
           Hey there ✰! I’m Muhammad Farooq, a passionate Web Developer 💻 based
@@ -112,6 +114,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.4 }}
+          viewport={{ once: true }}
           className="mt-10 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full"
         >
           For the past year ☟ I’ve been living the ✰ developer dream—taking
@@ -123,6 +126,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
+          viewport={{ once: true }}
           className="mt-10 w-[70%] text-white text-4xl font-black text-center max-sm:text-2xl max-sm:w-full"
         >
           My focus ✎ is always on creating web experiences that truly connect
@@ -139,6 +143,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
           className="w-full h-auto"
         >
           <h1 className="text-right font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[150px] max-sm:text-[70px] max-sm:leading-[200px]">
@@ -155,6 +160,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
+          viewport={{ once: true }}
           className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl"
         >
           Technology
@@ -165,7 +171,8 @@ export default function Page() {
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.2 * index }}
+                transition={{ duration: 0.3, delay: 0.1 * index }}
+                viewport={{ once: true }}
                 key={index}
                 className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
               >
@@ -182,6 +189,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
           className="text-white text-9xl font-black text-center mt-32 max-md:text-6xl"
         >
           Services
@@ -191,6 +199,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
             className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
           >
             <h1 className="text-white text-9xl font-black">
@@ -204,6 +213,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
             className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
           >
             <h1 className="text-white text-9xl font-black">
@@ -217,6 +227,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
             className="text-white border-2 border-white w-[450px] h-100 flex flex-col justify-around items-center p-10 max-lg:w-full "
           >
             <h1 className="text-white text-9xl font-black">

@@ -7,6 +7,7 @@ export default function About() {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.3 }}
+        viewport={{ once: true }}
         className="mt-20 text-center text-[200px] font-[cursive] font-black text-white leading-[200px] scale-y-150 tracking-tighter max-lg:text-[166px] max-sm:text-7xl max-sm:leading-20"
       >
         About
@@ -15,6 +16,7 @@ export default function About() {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.3 }}
+        viewport={{ once: true }}
         className="pt-28 text-center text-[200px] font-black text-transparent uppercase [-webkit-text-stroke:3px_white] leading-[160px] scale-y-150 tracking-tighter max-lg:text-[166px] max-sm:text-7xl max-sm:leading-20"
       >
         beyond code
@@ -24,6 +26,7 @@ export default function About() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
           className="w-[70%] text-[#C8C8C8] font-bold text-4xl text-center "
         >
           For the past One years, ☟ I&#39;ve been living the ✰ dream —

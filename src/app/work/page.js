@@ -12,6 +12,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
           className="text-[210px] text-white scale-y-150 uppercase font-black text-center max-sm:text-[125px]"
         >
           work
@@ -20,6 +21,7 @@ export default function Page() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
           className="mt-72 text-white text-center text-4xl max-sm:text-3xl"
         >
           Peek into a lineup of web projects where creativity 🎨 meets clean

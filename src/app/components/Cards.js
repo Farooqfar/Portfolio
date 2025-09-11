@@ -9,7 +9,8 @@ export default function Cards() {
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+        viewport={{ once: true }}
       >
         <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
           <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -34,7 +35,8 @@ export default function Cards() {
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+        viewport={{ once: true }}
       >
         <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
           <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -59,7 +61,8 @@ export default function Cards() {
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+        viewport={{ once: true }}
       >
         <div className="w-full h-auto flex flex-col items-center justify-center text-center p-20">
           <h1 className="text-[#D3D3D3] text-2xl scale-y-170 font-black tracking-tighter max-sm:text-xl">
@@ -84,8 +87,8 @@ export default function Cards() {
       <motion.div
         className="relative w-[49%] h-[1000px] flex flex-col justify-between border-2 border-[#D3D3D3] mt-10 max-lg:w-full"
         initial={{ opacity: 0, y: 200 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.2, delay: 0.2 }}
+        viewport={{ once: true }}
       >
         <a
           href="https://github.com/Farooqfar"

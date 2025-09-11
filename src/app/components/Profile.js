@@ -12,6 +12,7 @@ export default function Profile() {
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.3 }}
+              viewport={{ once: true }}
               className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-full"
             >
               I&#39;ve had the opportunity to work with some amazing teams and
@@ -23,7 +24,8 @@ export default function Profile() {
             <motion.a
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.2, delay: 0.3 }}
+              viewport={{ once: true }}
               className="mt-16 w-60 flex gap-3 justify-center items-center text-center text-[#C8C8C8] text-2xl border-2 p-2 border-[#C8C8C8] rounded-3xl cursor-pointer hover:bg-white hover:text-black"
               download
               href="/cv/MuhammadFarooq.pdf"
@@ -37,7 +39,8 @@ export default function Profile() {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.1, delay: 0.3 }}
+            viewport={{ once: true }}
             className="w-100 text-[#C8C8C8] font-bold text-2xl text-start max-lg:w-80"
           >
             When I&#39;m not coding, you&#39;ll usually find me exploring new

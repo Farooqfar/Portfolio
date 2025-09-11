@@ -16,6 +16,7 @@ export default function Home() {
             className="relative w-[50%] max-lg:w-full max-lg:justify-center max-lg:flex"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
           >
             <h1 className="relative text-[210px] leading-[270px] font-black  text-white uppercase z-10 scale-y-150 max-sm:text-[125px]">
               full
@@ -68,6 +69,7 @@ export default function Home() {
             className="relative flex top-28 w-[50%]  max-lg:w-full max-lg:justify-center max-lg:left-0 max-lg:top-28 max-xl:left-5 max-xl:top-44"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
           >
             <h1 className="relative left-[-25px] text-[200px] leading-[270px] font-black text-white uppercase z-10 scale-y-150 max-lg:text-[185px] max-xl:text-[12vw] max-2xl:text-[165px] max-sm:text-[90px] max-sm:text-center max-sm:ml-11">
               stack
@@ -111,6 +113,7 @@ export default function Home() {
           className="relative w-full max-lg:top-10"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
         >
           <h1 className="relative top-[-30px] text-[200px] text-center text-transparent leading-[270px] font-black uppercase pt-24 [-webkit-text-stroke:3px_white] scale-y-150 z-10  max-xl:text-[165px] max-lg:text-[210px] ">
             <span className="hidden max-lg:inline max-sm:text-[153px]">
@@ -153,6 +156,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.5 }}
+          viewport={{ once: true }}
         >
           Hey there ✰! I’m Muhammad Farooq — a MERN Stack & Next.js Developer ⚡
           based in Pakistan. I specialize in building modern, high-performing
@@ -167,6 +171,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.4 }}
+        viewport={{ once: true }}
       >
         <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
           Work

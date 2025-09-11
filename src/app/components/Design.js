@@ -19,6 +19,7 @@ export default function Design() {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.3 }}
+        viewport={{ once: true }}
       >
         <h1 className="text-left font-[cursive] p-5 text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
@@ -36,7 +37,8 @@ export default function Design() {
           className="w-100 flex flex-col items-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.4 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <GiArchiveResearch className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -54,7 +56,8 @@ export default function Design() {
           className="w-100 flex flex-col items-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.2, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <PiStrategy className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -72,7 +75,8 @@ export default function Design() {
           className="w-100 flex flex-col items-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.2, delay: 0.1 }}
+          viewport={{ once: true }}
         >
           <SiAltiumdesigner className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -90,7 +94,8 @@ export default function Design() {
           className="w-100 flex flex-col items-center "
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.2, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <FaCode className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -108,7 +113,8 @@ export default function Design() {
           className="w-100 flex flex-col items-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.1, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           <SiTestcafe className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
@@ -126,7 +132,8 @@ export default function Design() {
           className="w-100 flex flex-col items-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
+          transition={{ duration: 0.2, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           <FaRepeat className="text-white text-[250px] text-center max-sm:text-[130px]" />
           <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
