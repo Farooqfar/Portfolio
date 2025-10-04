@@ -21,13 +21,13 @@ export default function Design() {
         transition={{ duration: 0.3, delay: 0.3 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-left font-[cursive] p-5 text-[#DADADA] text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
+        <h1 className="text-left font-[cursive] p-5 text-white text-[250px] leading-[220px] max-lg:text-[160px] max-lg:mb-20 max-sm:text-[80px]">
           Approach
         </h1>
-        <h1 className="text-right leading-[170px] p-5 uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-sm:text-[80px] max-sm:leading-[100px]">
+        <h1 className="text-right leading-[170px] p-5 uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_white] scale-y-150 tracking-tighter max-sm:text-[80px] max-sm:leading-[100px]">
           Ideas into <br /> Impact
         </h1>
-        <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl max-lg:mt-32 max-sm:text-sm max-sm:w-full">
+        <p className="text-left uppercase bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent font-black w-[400px] text-2xl max-lg:mt-32 max-sm:text-sm max-sm:w-full">
           It&#39;s not just about making things pretty — it&#39;s about making
           them count.
         </p>
@@ -40,14 +40,14 @@ export default function Design() {
           transition={{ duration: 0.3, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <GiArchiveResearch className="text-white text-[250px] text-center max-sm:text-[130px]" />
-          <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
+          <GiArchiveResearch className="text-yellow-400 text-[250px] text-center max-sm:text-[130px]" />
+          <h1 className="bg-gradient-to-b from-blue-400 via-yellow-500 to-gray-900 bg-clip-text text-transparent text-center text-3xl font-black max-sm:text-2xl">
             -1-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             research
           </h1>
-          <p className="text-white text-2xl text-center mt-10 max-sm:text-md">
+          <p className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-2xl text-center mt-10 max-sm:text-md">
             Digging into insights and user needs to uncover the story behind the
             solution.
           </p>
@@ -59,14 +59,14 @@ export default function Design() {
           transition={{ duration: 0.2, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <PiStrategy className="text-white text-[250px] text-center max-sm:text-[130px]" />
-          <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
+          <PiStrategy className="text-green-400 text-[250px] text-center max-sm:text-[130px]" />
+          <h1 className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-center text-3xl font-black max-sm:text-2xl">
             -2-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             STRATEGIZE
           </h1>
-          <p className="text-white text-2xl text-center mt-10 max-sm:text-md">
+          <p className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-2xl text-center mt-10 max-sm:text-md">
             Mapping out the vision and strategy to align creativity with goals.
             Clarity meets purpose here.
           </p>
@@ -78,14 +78,14 @@ export default function Design() {
           transition={{ duration: 0.2, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <SiAltiumdesigner className="text-white text-[250px] text-center max-sm:text-[130px]" />
-          <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
+          <SiAltiumdesigner className="text-blue-400 text-[250px] text-center max-sm:text-[130px]" />
+          <h1 className="bg-gradient-to-b from-blue-400 via-blue-500 to-gray-900 bg-clip-text text-transparent text-center text-3xl font-black max-sm:text-2xl">
             -3-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             DESIGN
           </h1>
-          <p className="text-white text-2xl text-center mt-10 max-sm:text-md">
+          <p className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-2xl text-center mt-10 max-sm:text-md">
             Where the magic happens! From concepts to visuals, its all about
             bringing bold ideas to life.
           </p>
@@ -97,14 +97,14 @@ export default function Design() {
           transition={{ duration: 0.2, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <FaCode className="text-white text-[250px] text-center max-sm:text-[130px]" />
-          <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
+          <FaCode className="text-green-400 text-[250px] text-center max-sm:text-[130px]" />
+          <h1 className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-center text-3xl font-black max-sm:text-2xl">
             -4-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             BUILD
           </h1>
-          <p className="text-white text-2xl text-center mt-10 max-sm:text-md">
+          <p className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-2xl text-center mt-10 max-sm:text-md">
             Turning designs into reality with seamless development that bridges
             form and function.
           </p>
@@ -116,14 +116,14 @@ export default function Design() {
           transition={{ duration: 0.1, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <SiTestcafe className="text-white text-[250px] text-center max-sm:text-[130px]" />
-          <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
+          <SiTestcafe className="text-blue-400 text-[250px] text-center max-sm:text-[130px]" />
+          <h1 className="bg-gradient-to-b from-blue-400 via-blue-500 to-gray-900 bg-clip-text text-transparent text-center text-3xl font-black max-sm:text-2xl">
             -5-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             TEST
           </h1>
-          <p className="text-white text-2xl text-center mt-10 max-sm:text-md">
+          <p className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-2xl text-center mt-10 max-sm:text-md">
             Fine-tuning every detail through testing to ensure it works
             beautifully for users.
           </p>
@@ -135,14 +135,14 @@ export default function Design() {
           transition={{ duration: 0.2, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <FaRepeat className="text-white text-[250px] text-center max-sm:text-[130px]" />
-          <h1 className="text-white text-center text-3xl font-black max-sm:text-2xl">
+          <FaRepeat className="text-yellow-400 text-[250px] text-center max-sm:text-[130px]" />
+          <h1 className="bg-gradient-to-b from-blue-400 via-yellow-500 to-gray-900 bg-clip-text text-transparent text-center text-3xl font-black max-sm:text-2xl">
             -6-
           </h1>
           <h1 className="text-white text-6xl font-black text-center uppercase scale-y-150 max-sm:text-4xl">
             REPEAT
           </h1>
-          <p className="text-white text-2xl text-center mt-10 max-sm:text-md">
+          <p className="bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-2xl text-center mt-10 max-sm:text-md">
             Refining, evolving, and growing—because great design is never one
             and done.
           </p>
@@ -161,39 +161,39 @@ export default function Design() {
           loop="-1"
           className="text-9xl h-auto p-3 font-black text-white scale-y-150 max-sm:text-5xl"
         >
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_yellow]">
             SAY
           </span>{" "}
           HELLO!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_red]">
             SAY
           </span>{" "}
           こんにちは!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_blue]">
             SAY
           </span>{" "}
           HOLA!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_yellow]">
             SAY
           </span>{" "}
           HALLO!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_red]">
             SAY
           </span>{" "}
           OLÁ!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_blue]">
             SAY
           </span>{" "}
           مرحبا!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_yellow]">
             SAY
           </span>{" "}
           CIAO!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_red]">
             SAY
           </span>{" "}
           BONJOUR!
-          <span className="text-transparent [-webkit-text-stroke:1px_white]">
+          <span className="text-transparent [-webkit-text-stroke:2px_blue]">
             SAY
           </span>{" "}
           HELLO!

@@ -27,7 +27,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
           viewport={{ once: true }}
-          className="w-[70%] text-[#C8C8C8] font-bold text-4xl text-center "
+          className="w-[70%] bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent font-bold text-4xl text-center "
         >
           For the past One years, ☟ I&#39;ve been living the ✰ dream —
           transforming big ideas into code that not only looks incredible but
