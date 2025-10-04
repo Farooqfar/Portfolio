@@ -152,7 +152,7 @@ export default function Home() {
       {/* short Abouts us */}
       <section className="w-full h-auto mt-20 p-56 max-lg:p-10 max-lg:mt-100 max-sm:p-0 overflow-hidden">
         <motion.p
-          className="text-4xl font-black text-[#B2B2B2] text-center"
+          className="text-4xl font-black bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent text-center"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.5 }}
@@ -173,7 +173,7 @@ export default function Home() {
         transition={{ duration: 0.3, delay: 0.4 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-left font-[cursive] text-[#DADADA] text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
+        <h1 className="text-left font-[cursive] text-white text-[250px] leading-[220px] rotate-[-2deg] max-lg:text-[220px] max-sm:text-[130px] max-sm:leading-[240px]">
           Work
         </h1>
         <h2 className="text-right pr-3 leading-[170px] uppercase text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[170px] max-lg:leading-[170px] max-sm:text-[100px] max-sm:text-start max-sm:leading-[100px]">
@@ -184,7 +184,7 @@ export default function Home() {
         <h2 className="text-right pr-3 uppercase leading-[300px] text-transparent text-[170px] font-black [-webkit-text-stroke:2px_#DADADA] scale-y-150 tracking-tighter max-lg:text-[170px] max-lg:leading-[400px] max-sm:text-[85px] max-sm:leading-[220px]">
           speaks
         </h2>
-        <p className="text-left uppercase text-[#DADADA] font-black w-[400px] text-2xl max-sm:text-sm max-sm:w-full">
+        <p className="text-left uppercase bg-gradient-to-b from-blue-400 via-green-500 to-gray-900 bg-clip-text text-transparent  font-black w-[400px] text-2xl max-sm:text-sm max-sm:w-full">
           Peek into a lineup of projects where logic meets innovation.
         </p>
       </motion.section>
